@@ -13,7 +13,8 @@ html {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin: 0;
 }
 
@@ -51,7 +52,7 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  background: #f2f2f2;
+  background: #dad8d8;
 }
 
 header {
@@ -103,7 +104,7 @@ nav {
 
 .menu a {
   padding: 1.5rem;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #dad8d8;
   color: black;
 }
 
@@ -192,7 +193,7 @@ button:hover {
   border-radius: 50px;
   cursor: pointer;
   font-weight: 700;
-  background: #f2f2f2;
+  background: #dad8d8;
   color: #7a7a7a;
   padding-left: 4rem;
 }
@@ -231,14 +232,14 @@ button:hover {
 }
 
 .stat:nth-child(2) {
-  border-top: 1px solid #f2f2f2;
-  border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid #dad8d8;
+  border-bottom: 1px solid #dad8d8;
 }
 
 .contribution-bar {
   height: 14px;
   width: 100%;
-  background: #f2f2f2;
+  background: #dad8d8;
   border-radius: 50px;
 }
 
@@ -258,8 +259,43 @@ button:hover {
 }
 
 .pledge {
-  border: 1px solid #f2f2f2;
+  border: 1px solid #dad8d8;
   border-radius: 10px;
-  padding: 2rem 1rem;
+  padding: 2rem 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.pledge h5 {
+  color: #3cb4ac;
+  margin-top: 0.5rem;
+}
+
+.pledge .pledge-header,
+.pledge p {
+  margin-bottom: 1.5rem;
+}
+
+.pledge button {
+  font-weight: 700;
+}
+
+.pledge-stat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 5rem;
+}
+
+.pledge-stat p {
+  text-align: center;
+  margin-left: 0.7rem;
+}
+
+.out-of-stock {
+  opacity: 0.5;
+}
+
+.out-of-stock button {
+  background-color: #7a7a7a;
 }
 /*# sourceMappingURL=styles.css.map */
