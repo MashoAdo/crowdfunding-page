@@ -18,6 +18,11 @@ h5 {
   margin: 0;
 }
 
+div {
+  margin: 0;
+  padding: 0;
+}
+
 p {
   margin: 0;
   font-weight: 500;
@@ -283,11 +288,9 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 5rem;
 }
 
 .pledge-stat p {
-  text-align: center;
   margin-left: 0.7rem;
 }
 
@@ -297,5 +300,147 @@ button:hover {
 
 .out-of-stock button {
   background-color: #7a7a7a;
+}
+
+.back-this-project .back-this-project-head p {
+  margin: 1.3rem 0;
+}
+
+.back-this-project .pledge-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.back-this-project .radio-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #dad8d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0.8rem;
+}
+
+.back-this-project .radio-btn .radio {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #3cb4ac;
+}
+
+.pledge2 {
+  border: 1px solid #dad8d8;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+.pledge2-info {
+  border-radius: 10px;
+  padding: 1rem 1.8rem;
+}
+
+.pledge2-info p {
+  margin: 1rem 0;
+}
+
+.pledge-header h5 {
+  color: #3cb4ac;
+  margin-top: 0.6rem;
+}
+
+.pledge-stat2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pledge-stat2 p {
+  margin-left: 0.5rem;
+}
+
+.pledge-input-nav {
+  border-top: 1px solid #dad8d8;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.pledge-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.5rem;
+  padding: 0 1.8rem;
+}
+
+.pledge-input input {
+  border: none;
+}
+
+.pledge-input h2 {
+  margin-left: 0.5rem;
+}
+
+.pledge-input .pledge-stat {
+  border: 1px solid #dad8d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.mahogany {
+  opacity: 0.5;
+}
+
+.thanks-support {
+  padding: 1rem 1.8rem;
+  border: 1px solid #dad8d8;
+  border-radius: 10px;
+  background-color: white;
+  margin: 1.5rem;
+  text-align: center;
+}
+
+.thanks-support h2 {
+  margin: 2rem 0;
+}
+
+.thanks-support button {
+  margin: 2rem 0 1.5rem;
 }
 /*# sourceMappingURL=styles.css.map */
