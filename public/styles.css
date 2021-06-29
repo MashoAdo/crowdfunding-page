@@ -10,6 +10,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.opacity {
+  opacity: 0.5;
+}
+
+.background {
+  background-color: #3cb4ac;
+}
+
 h1,
 h2,
 h3,
@@ -320,9 +328,8 @@ button:hover {
 
 .back-this-project {
   position: absolute;
-  top: -5rem;
+  top: -100%;
   z-index: 100;
-  display: none;
 }
 
 .back-this-project .back-this-project-head p {
@@ -346,17 +353,15 @@ button:hover {
 }
 
 .back-this-project .back-this-project-nav .close-button {
-  border: 1px solid #dad8d8;
-  border-radius: 5px;
-  padding: 0.2rem;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  font-size: 1.5rem;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .back-this-project .back-this-project-nav .close-button:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .back-this-project .pledge-header {
@@ -393,7 +398,10 @@ button:hover {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #3cb4ac;
+}
+
+.show {
+  top: -5rem;
 }
 
 .pledge2 {
