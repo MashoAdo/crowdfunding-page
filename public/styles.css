@@ -378,12 +378,16 @@ button:hover {
 }
 
 .back-this-project .pledge-header h4 {
-  -webkit-transition: .2s ease-in;
-  transition: .2s ease-in;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
 }
 
 .back-this-project .pledge-header h4:hover {
   color: #3cb4ac;
+}
+
+.back-this-project .pledge-header h4:hover .radio-btn {
+  border-color: #3cb4ac;
 }
 
 .back-this-project .radio-btn {
@@ -637,6 +641,21 @@ button:hover {
     border-left: 1px solid #dad8d8;
     border-right: 1px solid #dad8d8;
     padding: 0 2rem;
+  }
+  .pledge-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .pledge-footer {
     display: -webkit-box;
