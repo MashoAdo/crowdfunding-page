@@ -276,8 +276,7 @@ button {
 	position: absolute;
 	top: -100%;
 	z-index: 100;
-	// display: none;
-	.back-this-project-head {
+	 	.back-this-project-head {
 		p {
 			margin: 1.3rem 0;
 		}
@@ -300,7 +299,18 @@ button {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		h4{
+			transition: .2s ease-out;
+			
+			&:hover{
+				color: $Moderate-cyan;
+                			}
+			}
+		&:hover > .radio-btn{
+			border-color: $Moderate-cyan;
+		}
 	}
+	
 	.radio-btn {
 		width: 20px;
 		height: 20px;
@@ -481,9 +491,17 @@ button {
 		padding: 0 2rem;
 	}
 	// SECTION 3
-	.pledge-footer {
+.section3{
+	.pledge-header{
 		@include flexRow();
 	}
+	.pledge-footer {
+		@include flexRow();
+		h4{
+			padding-right: 2rem;
+		}
+	}
+}
 
 	// BACK THIS PROJECT
 	.pledge-input-nav {
@@ -494,6 +512,15 @@ button {
 			flex-direction: row;
 			justify-content: space-between;
 		}
+	}
+	.pledge-headings{
+		@include flexRow();
+		h5{
+			margin-left: 1rem;
+			position: relative;
+			top: -5px;
+		}
+		
 	}
 }
 @media screen and (min-width: 1000px) {
