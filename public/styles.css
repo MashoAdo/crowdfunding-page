@@ -386,7 +386,7 @@ button:hover {
   color: #3cb4ac;
 }
 
-.back-this-project .pledge-header h4:hover .radio-btn {
+.back-this-project .pledge-header:hover > .radio-btn {
   border-color: #3cb4ac;
 }
 
@@ -642,7 +642,7 @@ button:hover {
     border-right: 1px solid #dad8d8;
     padding: 0 2rem;
   }
-  .pledge-header {
+  .section3 .pledge-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -657,7 +657,7 @@ button:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  .pledge-footer {
+  .section3 .pledge-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -672,7 +672,7 @@ button:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  .pledge-footer h4 {
+  .section3 .pledge-footer h4 {
     padding-right: 2rem;
   }
   .pledge-input-nav {
