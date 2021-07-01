@@ -6,8 +6,10 @@ const backProject = document.getElementById("back-this-project")
 const closeBackProject = document.getElementById("close-button-back-project")
 const main = document.getElementById("main")
 const radioBtn = document.querySelectorAll("#radio-btn")
-const radio = document.querySelectorAll(".radio")
-
+const radio = document.querySelectorAll("#radio")
+const continueBtn = document.querySelectorAll(".continue")
+const thanksSupport = document.getElementById("thanks-support")
+const removeSupportPage = document.getElementById("remove-support-page")
 // when clicked display menu
 menuBtn.addEventListener("click", () => {
   menu.classList.toggle("show-menu")
@@ -22,3 +24,7 @@ closeBackProject.addEventListener("click", () => {
   backProject.classList.remove("show")
 })
 
+// Remove support page
+removeSupportPage.addEventListener("click", ()=>{
+  thanksSupport.classList.add("top")
+})
