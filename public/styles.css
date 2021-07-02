@@ -438,6 +438,10 @@ button:hover {
   padding-bottom: 1rem;
 }
 
+.pledge2-border {
+  border: 2px solid #3cb4ac;
+}
+
 .pledge2-info {
   border-radius: 10px;
   padding: 1rem 1.8rem;
@@ -517,7 +521,7 @@ button:hover {
 
 .thanks-support {
   position: absolute;
-  top: -5rem;
+  top: -100%;
   z-index: 100;
   padding: 1rem 1.8rem;
   border: 1px solid #dad8d8;
@@ -533,6 +537,10 @@ button:hover {
 
 .thanks-support button {
   margin: 2rem 0 1.5rem;
+}
+
+.show-support {
+  top: -5rem;
 }
 
 .top {
