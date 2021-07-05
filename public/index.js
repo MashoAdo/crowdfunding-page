@@ -3,8 +3,13 @@ const menu = document.getElementById("menu")
 const menuLogo = document.getElementById("menu-button")
 const main = document.getElementById("main")
 
-const backProjectBtn = document.getElementById("back-this-project-button")
+const section1 = document.getElementById("section1")
+const section2 = document.getElementById("section2")
+const aboutThisProject = document.getElementById("about-this-project")
+
+
 const backProject = document.getElementById("back-this-project")
+const backProjectBtn = document.getElementById("back-this-project-button")
 const closeBackProject = document.getElementById("close-button-back-project")
 
 const radioBtn = document.querySelectorAll("#radio-btn")
@@ -24,10 +29,17 @@ menuBtn.addEventListener("click", () => {
 // When clicked it displays the back project section
 backProjectBtn.addEventListener("click", () => {
   backProject.classList.add("show")
+  section1.classList.add("opacity")
+  section2.classList.add("opacity")
+  aboutThisProject.classList.add("opacity")
+
 })
 // Remove the back project section
 closeBackProject.addEventListener("click", () => {
   backProject.classList.remove("show")
+  section1.classList.remove("opacity")
+  section2.classList.remove("opacity")
+  aboutThisProject.classList.remove("opacity")
 })
 // use a spread operator to "convert" nodelist object to an array
 const radiobuttonsArray = [...radioBtn]
@@ -54,16 +66,18 @@ radiobuttonsArray.forEach((item,index) =>{
 })
 
 // // Advance to the support page when the continue button is clicked
-// const continueBtnArr = [...continueBtn]
-// console.log(continueBtnArr)
+const continueBtnArr = [...continueBtn]
 
-// continueBtnArr.forEach (c =>{
-//   c.addEventListener("click", () =>{
-//     // Remove the back this project section
-//     backProject.classList.remove("show")
-//     thanksSupport.classList.add("show-support")
-//   })
-// })
+continueBtnArr.forEach (c =>{
+  c.addEventListener("click", () =>{
+    // Remove the back this project section
+    backProject.classList.remove("show")
+    thanksSupport.classList.add("show-support")
+    section1.classList.remove("opacity")
+  section2.classList.remove("opacity")
+  aboutThisProject.classList.remove("opacity")
+  })
+})
 
 // Remove support page
 removeSupportPage.addEventListener("click", ()=>{
