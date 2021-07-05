@@ -7,6 +7,7 @@ const section1 = document.getElementById("section1")
 const section2 = document.getElementById("section2")
 const aboutThisProject = document.getElementById("about-this-project")
 
+const rewardButton = document.querySelectorAll("#reward-btn")
 
 const backProject = document.getElementById("back-this-project")
 const backProjectBtn = document.getElementById("back-this-project-button")
@@ -25,7 +26,20 @@ const pledge2Border = document.getElementsByClassName("pledge2")
 menuBtn.addEventListener("click", () => {
   menu.classList.toggle("show-menu")
   main.classList.toggle("opacity")
-});
+})
+
+// change background of select reward button when clicked
+const rewardButtonArr = [...rewardButton]
+console.log(rewardButtonArr)
+rewardButtonArr.forEach(rb =>{
+  rb.addEventListener("click",()=>{
+    rewardButtonArr.forEach(rb =>{
+      rb.classList.remove("button-clicked")
+    })
+rb.classList.add("button-clicked")
+  })
+})
+
 // When clicked it displays the back project section
 backProjectBtn.addEventListener("click", () => {
   backProject.classList.add("show")
