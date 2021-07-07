@@ -40,10 +40,6 @@ bookmark.addEventListener("click", () =>{
   // remove hover after click
  bookmark.classList.toggle("no-hover")
 })
-// Blurr bookmark on click
-bookmark.addEventListener("click",() =>{
-  bookmark.classList.toggle("blur")
-})
 
 
 // change background of select reward button when clicked
