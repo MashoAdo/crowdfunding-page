@@ -9,6 +9,7 @@ const section2 = document.getElementById("section2")
 const aboutThisProject = document.getElementById("about-this-project")
 
 const rewardButton = document.querySelectorAll("#reward-btn")
+const remaining = document.querySelectorAll("#remaining")
 
 const bookmark = document.getElementById("bookmark")
 
@@ -27,7 +28,6 @@ const removeSupportPage = document.getElementById("remove-support-page")
 const pledge2Border = document.getElementsByClassName("pledge2")
 
 
-
 // MENU JS//
 // when clicked display menu
 menuBtn.addEventListener("click", () => {
@@ -42,17 +42,26 @@ bookmark.addEventListener("click", () =>{
 })
 
 
-// change background of select reward button when clicked
+// change background of select reward button when clicked and reduce the number of pledge left//
+ // convert node to array
+const remainingArr = [...remaining]
 const rewardButtonArr = [...rewardButton]
-rewardButtonArr.forEach(rb =>{
+
+rewardButtonArr.forEach((rb,i) =>{
   rb.addEventListener("click",()=>{
-    rewardButtonArr.forEach(rb =>{
+      rewardButtonArr.forEach(rb =>{
       rb.classList.remove("button-clicked")
     })
-rb.classList.add("button-clicked")
+
+      rb.classList.toggle("button-clicked")
+// get the innertxt and convert it to a number
+   var number = parseInt(remainingArr[i].innerText) 
+  //  calculate the remaining from pledge left after click
+   var updateRem = number -1
+  //  update the the page with the remaining pledge after one has been selected
+   remainingArr[i].innerText = updateRem
   })
 })
-
 // When clicked it displays the back project section
 backProjectBtn.addEventListener("click", () => {
   backProject.classList.add("show")
@@ -71,7 +80,6 @@ closeBackProject.addEventListener("click", () => {
 // use a spread operator to "convert" nodelist object to an array
 const radiobuttonsArray = [...radioBtn]
 const radioArray = [...radio]
-
 const arrPledge = [...pledge2Border]
 
 // add background to radio button 
