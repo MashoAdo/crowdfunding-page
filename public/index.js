@@ -2,12 +2,15 @@ const menuBtn = document.getElementById("menu-btn")
 const menu = document.getElementById("menu")
 const menuLogo = document.getElementById("menu-button")
 const main = document.getElementById("main")
+const body = document.body
 
 const section1 = document.getElementById("section1")
 const section2 = document.getElementById("section2")
 const aboutThisProject = document.getElementById("about-this-project")
 
 const rewardButton = document.querySelectorAll("#reward-btn")
+
+const bookmark = document.getElementById("bookmark")
 
 const backProject = document.getElementById("back-this-project")
 const backProjectBtn = document.getElementById("back-this-project-button")
@@ -22,15 +25,29 @@ const thanksSupport = document.getElementById("thanks-support")
 const removeSupportPage = document.getElementById("remove-support-page")
 
 const pledge2Border = document.getElementsByClassName("pledge2")
+
+
+
+// MENU JS//
 // when clicked display menu
 menuBtn.addEventListener("click", () => {
   menu.classList.toggle("show-menu")
   main.classList.toggle("opacity")
 })
+// blur bookmark on click
+bookmark.addEventListener("click", () =>{
+  bookmark.classList.toggle("opacity")
+  // remove hover after click
+ bookmark.classList.toggle("no-hover")
+})
+// Blurr bookmark on click
+bookmark.addEventListener("click",() =>{
+  bookmark.classList.toggle("blur")
+})
+
 
 // change background of select reward button when clicked
 const rewardButtonArr = [...rewardButton]
-console.log(rewardButtonArr)
 rewardButtonArr.forEach(rb =>{
   rb.addEventListener("click",()=>{
     rewardButtonArr.forEach(rb =>{
