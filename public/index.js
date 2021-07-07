@@ -30,10 +30,18 @@ const pledge2Border = document.getElementsByClassName("pledge2")
 
 // MENU JS//
 // when clicked display menu
-menuBtn.addEventListener("click", () => {
+menuBtn.addEventListener("click", (e) => {
+  e.stopPropagation()
   menu.classList.toggle("show-menu")
   main.classList.toggle("opacity")
 })
+body.addEventListener("click",(e) =>{
+    if(e.target.id !=="menu") {
+    menu.classList.remove("show-menu")
+    main.classList.remove("opacity")
+   }
+})
+
 // blur bookmark on click
 bookmark.addEventListener("click", () =>{
   bookmark.classList.toggle("opacity")
