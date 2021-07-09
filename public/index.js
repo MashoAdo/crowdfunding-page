@@ -35,6 +35,7 @@ menuBtn.addEventListener("click", (e) => {
   menu.classList.toggle("show-menu")
   main.classList.toggle("opacity")
 })
+// Remove menu when other part of the body is clicked
 body.addEventListener("click",(e) =>{
     if(e.target.id !=="menu") {
     menu.classList.remove("show-menu")
@@ -70,20 +71,29 @@ rewardButtonArr.forEach((rb,i) =>{
    remainingArr[i].innerText = updateRem
   })
 })
-// When clicked it displays the back project section
-backProjectBtn.addEventListener("click", () => {
+// function to add back this project section
+function addBackThisProject(){
   backProject.classList.add("show")
   section1.classList.add("opacity")
   section2.classList.add("opacity")
   aboutThisProject.classList.add("opacity")
+}
+// When clicked it displays the back project section
+backProjectBtn.addEventListener("click", () => {
+ addBackThisProject()
 
 })
-// Remove the back project section
-closeBackProject.addEventListener("click", () => {
+
+// function to remove the back this project
+function removeBackThisProject(){
   backProject.classList.remove("show")
   section1.classList.remove("opacity")
   section2.classList.remove("opacity")
   aboutThisProject.classList.remove("opacity")
+}
+// Remove the back project section
+closeBackProject.addEventListener("click", () => {
+ removeBackThisProject()
 })
 // use a spread operator to "convert" nodelist object to an array
 const radiobuttonsArray = [...radioBtn]
@@ -114,11 +124,8 @@ const continueBtnArr = [...continueBtn]
 continueBtnArr.forEach (c =>{
   c.addEventListener("click", () =>{
     // Remove the back this project section
-    backProject.classList.remove("show")
+    removeBackThisProject()
     thanksSupport.classList.add("show-support")
-    section1.classList.remove("opacity")
-  section2.classList.remove("opacity")
-  aboutThisProject.classList.remove("opacity")
   })
 })
 
