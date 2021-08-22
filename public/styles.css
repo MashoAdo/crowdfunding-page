@@ -75,7 +75,7 @@ body {
 }
 
 header {
-  background: url(/images/image-hero-mobile.jpg);
+  background: url(./images/image-hero-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 2rem 1.5rem;
@@ -588,7 +588,7 @@ button:hover {
 
 @media screen and (min-width: 800px) {
   header {
-    background: url(/images/image-hero-desktop.jpg);
+    background: url(./images/image-hero-desktop.jpg);
     padding: 2rem 8rem;
     display: -webkit-box;
     display: -ms-flexbox;
